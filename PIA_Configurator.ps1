@@ -22,7 +22,7 @@ else {
     "Directory already exists";
 }
 
-Expand-Archive -Path $PSScriptRoot\PIA.zip -DestinationPath $Folder -force;
+Expand-Archive -Path $mypath\PIA.zip -DestinationPath $Folder -force;
 #Expande el archivo PIA.zip en el destino mencionado en la variable $Folder
 
 $Libs = Get-Childitem $Folder -Recurse -ErrorAction SilentlyContinue | where {$_.Extension -Match "lib"} | Select-Object @{Expression={($_.DirectoryName + "\" +$_.Name)};Label="Destination"};
