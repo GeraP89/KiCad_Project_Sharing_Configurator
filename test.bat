@@ -1,1 +1,0 @@
-C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -ExecutionPolicy Bypass -File "%cd%\KiCad_Project_Sharing_Configurator.ps1"
